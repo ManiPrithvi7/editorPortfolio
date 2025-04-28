@@ -1,0 +1,120 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 12%;
+    --foreground: 0 0% 83%;
+
+    --card: 0 0% 15%;
+    --card-foreground: 0 0% 83%;
+
+    --popover: 0 0% 15%;
+    --popover-foreground: 0 0% 83%;
+
+    --primary: 210 100% 40%;
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 240 4% 23%;
+    --secondary-foreground: 0 0% 83%;
+
+    --muted: 240 4% 23%;
+    --muted-foreground: 240 5% 65%;
+
+    --accent: 240 4% 23%;
+    --accent-foreground: 0 0% 83%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 240 4% 23%;
+    --input: 240 4% 23%;
+    --ring: 0 0% 83%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 15%;
+    --sidebar-foreground: 0 0% 83%;
+    --sidebar-primary: 210 100% 40%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4% 16%;
+    --sidebar-accent-foreground: 0 0% 83%;
+    --sidebar-border: 240 4% 16%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-vscode-bg text-vscode-text;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-vscode-bg;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-vscode-accent/40 rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-vscode-accent/60;
+  }
+}
+
+@layer components {
+  .typewriter {
+    @apply overflow-hidden border-r-4 border-vscode-accent whitespace-nowrap;
+    animation: typing 3.5s steps(40, end), blink 0.75s step-end infinite;
+  }
+
+  .code-line {
+    @apply pl-4 border-l-2 border-transparent hover:border-vscode-accent transition-all duration-200;
+  }
+
+  .file-tab {
+    @apply px-4 py-2 flex items-center gap-2 hover:bg-vscode-sidebar-active transition-colors;
+  }
+
+  .file-tab.active {
+    @apply bg-vscode-bg border-t border-transparent border-r border-b-0;
+  }
+
+  .terminal-text {
+    @apply font-mono text-sm leading-relaxed;
+  }
+
+  .editor-content {
+    @apply bg-vscode-bg min-h-screen p-6 md:p-8;
+  }
+
+  .comment-text {
+    @apply text-vscode-comment;
+  }
+
+  .keyword-text {
+    @apply text-vscode-keyword;
+  }
+
+  .string-text {
+    @apply text-vscode-string;
+  }
+
+  .function-text {
+    @apply text-vscode-function;
+  }
+
+  .variable-text {
+    @apply text-vscode-variable;
+  }
+}
