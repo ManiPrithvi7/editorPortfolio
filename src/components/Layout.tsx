@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import Sidebar from "./Sidebar";
 import Footer from "./Footer";
@@ -30,16 +29,14 @@ const Layout = ({ children }: LayoutProps) => {
           <button
             onClick={toggleSidebar}
             className={`fixed top-4 left-4 z-50 p-2 bg-vscode-sidebar-active rounded hover:bg-vscode-sidebar hover:text-vscode-accent transition-colors md:hidden ${
-              sidebarOpen ? 'opacity-0 pointer-events-none' : 'opacity-100'
+              sidebarOpen ? "opacity-0 pointer-events-none" : "opacity-100"
             }`}
             aria-label={sidebarOpen ? "Close sidebar" : "Open sidebar"}
           >
             {sidebarOpen ? <X size={20} /> : <Menu size={20} />}
           </button>
-          
-          <div className="mt-12 md:mt-0 max-w-6xl mx-auto">
-            {children}
-          </div>
+
+          <div className="mt-12 md:mt-0 max-w-6xl mx-auto">{children}</div>
         </div>
       </div>
 

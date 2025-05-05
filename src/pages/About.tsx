@@ -1,7 +1,6 @@
-
-import React from 'react';
-import TypeWriter from '../components/TypeWriter';
-import CodeBlock from '../components/CodeBlock';
+import React from "react";
+import TypeWriter from "../components/TypeWriter";
+import CodeBlock from "../components/CodeBlock";
 
 const About = () => {
   const aboutCode = `/**
@@ -70,33 +69,33 @@ const maniKandan = new Developer();`;
         <h1 className="text-3xl font-bold mb-6">
           <TypeWriter text="About Me" />
         </h1>
-        
+
         <div className="space-y-6 max-w-2xl text-vscode-text/90">
           <p>
-            Hello! I'm Manikandan, a passionate Full Stack MERN Developer
-            with a strong focus on creating responsive and user-friendly web applications.
-            I enjoy tackling complex problems and turning them into simple and elegant solutions.
+            Hello! I'm Manikandan, a passionate Full Stack MERN Developer with a
+            strong focus on creating scalble and reliable backbone of
+            applications (Back-end). I enjoy tackling complex problems and
+            turning them into simple and elegant solutions.
           </p>
-          
+
           <p>
-            My journey in web development started with a curiosity about how websites work.
-            This curiosity evolved into a passion for building digital experiences that are
-            not only functional but also intuitive and accessible.
+            My journey in web development started with a curiosity about how
+            websites work. This curiosity evolved into a passion for building
+            digital experiences that are not only functional but also intuitive
+            and accessible.
           </p>
-          
+
           <p>
-            When I'm not coding, you can find me exploring new technologies  and  enhancing my skills through continuous learning.
+            When I'm not coding, you can find me exploring new technologies and
+            enhancing my skills through continuous learning.
           </p>
         </div>
       </div>
-      
+
       <div className="mt-8">
-        <CodeBlock
-          code={aboutCode}
-          fileName="about.js"
-        />
+        <CodeBlock code={aboutCode} fileName="about.js" />
       </div>
-      
+
       {/* <div className="mt-8">
         <h2 className="text-xl font-semibold mb-4 text-vscode-accent">Education & Experience</h2>
         
