@@ -19,9 +19,10 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  build:{
-    rollupOptions:{
-      external:["server-only"]
+  build: {
+    rollupOptions: {
+      external: ["server-only"]
     }
-  }
+  },
+  base: process.env.VITE_BASE_URL || "/editorPortfolio"
 }));
