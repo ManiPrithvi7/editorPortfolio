@@ -68,7 +68,7 @@ const Home = () => {
         </a> */}
         <a 
         className="px-4 py-2 border border-vscode-sidebar-active rounded hover:bg-vscode-sidebar-active transition-colors"
-        href='public/resume.pdf' download>Get My Resume</a>
+        href="public/manikandanResume-5.pdf" download>Get My Resume</a>
 
         {/* <DownloadResumeButton resumeUrl={'https://docs.google.com/document/d/1vA4vcyWUMb8nGLXsx93kGVWhhyEZnwscMPRGP6I5YQg/edit?usp=sharing'} /> */}
 
