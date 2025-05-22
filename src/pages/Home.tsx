@@ -84,10 +84,10 @@ const Home = () => {
           Get My Resume
         </a>
 
-        <DownloadResumeButton
+        {/* <DownloadResumeButton
           resumeUrl="editorPortfolio/public/manikandanResume.pdf" // Path to your PDF in public folder
           fileName="Manikandan_Resume.pdf"
-        />
+        /> */}
       </div>
     </section>
   );
