@@ -1,8 +1,7 @@
-
-import React from 'react';
-import TypeWriter from '../components/TypeWriter';
-import CodeBlock from  "@/components/CodeBlock";
-import DownloadResumeButton from '@/components/ResumeButton';
+import React from "react";
+import TypeWriter from "../components/TypeWriter";
+import CodeBlock from "@/components/CodeBlock";
+import DownloadResumeButton from "@/components/ResumeButton";
 
 const Home = () => {
   const introCode = `// Welcome to my portfolio
@@ -35,24 +34,21 @@ const Home = () => {
           <TypeWriter text="Hi, I'm Manikandan" />
         </h1>
         <h2 className="text-2xl text-vscode-accent">
-          <TypeWriter 
-            text="Full Stack MERN Developer" 
-            delay={80} 
-          />
+          <TypeWriter text="Full Stack MERN Developer" delay={80} />
         </h2>
         <p className="text-vscode-text/80 mt-6 max-w-xl leading-relaxed">
           I specialize in building modern web applications using the MERN stack.
-          With a passion for clean code and user-centric design, I create efficient
-          and scalable solutions that solve real-world problems.
+          With a passion for clean code and user-centric design, I create
+          efficient and scalable solutions that solve real-world problems.
         </p>
       </div>
-      
+
       <CodeBlock
         code={introCode}
         fileName="introduction.js"
         className="max-w-2xl"
       />
-      
+
       <div className="flex flex-wrap gap-4">
         <a
           href="/about"
@@ -63,15 +59,18 @@ const Home = () => {
         {/* <a
           href="/projects"
           className="px-4 py-2 border border-vscode-sidebar-active rounded hover:bg-vscode-sidebar-active transition-colors"
-        >
+        >public/manikandanResume.pdf
           View My Work
         </a> */}
-        <a 
-        className="px-4 py-2 border border-vscode-sidebar-active rounded hover:bg-vscode-sidebar-active transition-colors"
-        href="public/manikandanResume-5.pdf" download>Get My Resume</a>
+        <a
+          className="px-4 py-2 border border-vscode-sidebar-active rounded hover:bg-vscode-sidebar-active transition-colors"
+          href="public/manikandanResume.pdf"
+          download
+        >
+          Get My Resume
+        </a>
 
         {/* <DownloadResumeButton resumeUrl={'https://docs.google.com/document/d/1vA4vcyWUMb8nGLXsx93kGVWhhyEZnwscMPRGP6I5YQg/edit?usp=sharing'} /> */}
-
       </div>
     </section>
   );
