@@ -4,6 +4,19 @@ import CodeBlock from "@/components/CodeBlock";
 import DownloadResumeButton from "@/components/ResumeButton";
 
 const Home = () => {
+  const handleDownload = () => {
+    const fileUrl =
+      "https://docs.google.com/document/d/1O5pUNzqSH3A-ysFYnCqBpVfXoMVlRET2FKT2wJ2oSTs/edit?usp=sharing";
+
+    const link = document.createElement("a");
+    link.href = fileUrl;
+
+    link.download = "Manikandan_Resume.pdf";
+    console.log({ link }); // Set download file name
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
   const introCode = `// Welcome to my portfolio
   const dev = {
     name: 'Manikandan Siva',
@@ -64,13 +77,17 @@ const Home = () => {
         </a> */}
         <a
           className="px-4 py-2 border border-vscode-sidebar-active rounded hover:bg-vscode-sidebar-active transition-colors"
-          href="public/manikandanResume.pdf"
-          download
+          href="editorPortfolio/public/manikandanResume.pdf"
+          // onClick={() => handleDownload}
+          download="ManikandanResume.pdf"
         >
           Get My Resume
         </a>
 
-        {/* <DownloadResumeButton resumeUrl={'https://docs.google.com/document/d/1vA4vcyWUMb8nGLXsx93kGVWhhyEZnwscMPRGP6I5YQg/edit?usp=sharing'} /> */}
+        <DownloadResumeButton
+          resumeUrl="editorPortfolio/public/manikandanResume.pdf" // Path to your PDF in public folder
+          fileName="Manikandan_Resume.pdf"
+        />
       </div>
     </section>
   );
