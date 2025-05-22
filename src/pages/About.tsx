@@ -39,7 +39,7 @@ class Developer {
       {
         role: 'MERN Developer',
         company: 'Foss Freaks',
-        period: 'june 2023- Present',
+        period: 'Dec 2023 - Apr 2025',
         responsibilities: [
           'Developed and maintained web applications using MERN stack',
           'Collaborated with cross-functional teams',
@@ -49,7 +49,7 @@ class Developer {
       {
         role: 'Front-end Developer Trainee',
         company: 'Senchola technologies solution',
-        period: '2023 Feb - May',
+        period: '2023 Sept- Dec',
         responsibilities: [
               'assisted to create a scalable applications',
               'created a reusable components',
