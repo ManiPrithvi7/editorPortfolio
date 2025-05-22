@@ -77,7 +77,7 @@ const Home = () => {
         </a> */}
         <a
           className="px-4 py-2 border border-vscode-sidebar-active rounded hover:bg-vscode-sidebar-active transition-colors"
-          href="editorPortfolio/public/manikandanResume.pdf"
+          href="/public/manikandanResume.pdf"
           // onClick={() => handleDownload}
           download="ManikandanResume.pdf"
         >
